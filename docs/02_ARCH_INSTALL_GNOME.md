@@ -23,3 +23,18 @@
     ```sh
     reboot
     ```
+- Enable Fractional Scaling in Gnome (Not working on my laptop)
+    ```
+    sudo pacman -S dconf-editor
+    ```
+    - in org.gnome.mutter -> expermimental features
+## Some UserFriendly Gnome Extensions & Apps
+- Install Extension Manager from Flathub. (You can find it in Software Center provided by GNOME)
+- AppIndicator and KStatusNotfierItem Support
+- Caffine
+- Lock Keys
+- Arch Linux updates Indicator
+- Blur My Shell
+- Clipboard Indicator
+- Vitals
+- User Avatar in Quick Settings

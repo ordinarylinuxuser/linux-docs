@@ -186,3 +186,18 @@
   cd yay-bin
   makepkg -si
   ```
+- Install firewall
+  ```sh
+  sudo pacman -S firewalld
+  #enable the firewall
+  sudo systemctl enable firewalld.service
+  ```
+- Install Fonts for different langs
+  ```sh
+  #install the fonts
+  sudo pacman -S adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts
+  ```
+- Install pacman-contrib for checkupdates script
+  ```sh
+  sudo pacman -S pacman-contrib
+  ```
