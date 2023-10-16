@@ -123,6 +123,10 @@
     ```sh
     passwd yourpass
     ```
+- update the pacmanconfig
+    ```sh
+    nvim /etc/pacman.conf # enable color, paralleldownloads, add ILoveCandy & enable multilib
+    ```
 - installing essential tools
     ```sh
     pacman -S grub grub-btrfs inotify-tools efibootmgr base-devel linux-headers os-prober reflector git mtools xdg-user-dirs net-tools
