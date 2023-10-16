@@ -146,7 +146,7 @@
 - add a user & add to sudo (wheel) group
   ```sh
    useradd -mG wheel olu
-   passwd yourpass          #vm@123
+   passwd olu   #set pass for user
    EDITOR=nvim visudo #umcommment %wheel ALL=(ALL) ALL
   ```
 - Install the boot-loader grub
