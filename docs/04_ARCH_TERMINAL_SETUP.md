@@ -1,4 +1,4 @@
-# Installation of Hardware Drivers for Arch Linux Gnome
+# Installation of Terminal Setup for ArchLinux
 
 ## Prerequisites
 
@@ -6,27 +6,35 @@
 
 ## Installation Steps
 
-   - Install Alacritty
-  
-        ```sh
-        sudo pacman -S alacritty
-        ```
-   - Install zsh & zsh-completion
-        ```sh
-        sudo pacman -S zsh zsh-completions ttf-hack-nerd bat fd exa tree
-        ```
-   - Install oh-my-zsh
-        ```sh
-        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+- Install Alacritty
 
-        #syntax highlighting
-        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+     ```sh
+     sudo pacman -S alacritty
+     ```
 
-        #auto suggestion
-        git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-        ```
-   - Install fzf
-        ```sh
-        git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-        ~/.fzf/install
-        ```
+- Install zsh & zsh-completion
+
+     ```sh
+     sudo pacman -S zsh zsh-completions ttf-hack-nerd bat fd exa tree
+     ```
+
+- Install oh-my-zsh
+
+     ```sh
+     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+     #syntax highlighting
+     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+     #auto suggestion
+     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+     ```
+
+- Install fzf
+
+     ```sh
+     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+     ~/.fzf/install
+     ```
+
+- Copy the config file for alacritty & zshrc into respective location from this repo.

@@ -12,22 +12,29 @@
     lspci -k | grep -A 2 -E "(VGA|3D)"
     ```
 
-    - For intel 
-        ```sh
-        sudo pacman -S mesa xf86-video-intel sof-firmware sof-tools #xf86-video-intel for the DDX 2d acceleration in xorg (for the sound sof-firmware (took way too long to figure it out since my laptop didn't detect it))
-        sudo pacman -S intel-media-driver libva-utils #for VA- API
-        ```
-    - For vulkan support
-        ```sh
-        sudo pacman -S vulkan-intel vulkan-icd-loader vulkan-tools vulkan-mesa-layers #vulkan support
-        ```
-    - For nvidia
-        ```sh
-        #install nvidia package (For the Maxwell (NV110/GM XXX ) series and newer)
-        sudo pacman -S nvidia nvidia-utils #nvidia-lts for lts kernal // For kepler series nvidia-470xx-dkms // For fermi nvidia-390xx-dkms
-        sudo nvim /etc/mkinitcpio.conf #remove the kms hook & rebuild the initcpio & reboot (after the nvidia is detected re add it) 
-        ```
+  - For intel
+
+    ```sh
+    sudo pacman -S mesa xf86-video-intel sof-firmware sof-tools #xf86-video-intel for the DDX 2d acceleration in xorg (for the sound sof-firmware (took way too long to figure it out since my laptop didn't detect it))
+    sudo pacman -S intel-media-driver libva-utils #for VA- API
+    ```
+
+  - For vulkan support
+
+    ```sh
+    sudo pacman -S vulkan-intel vulkan-icd-loader vulkan-tools vulkan-mesa-layers #vulkan support
+    ```
+
+  - For nvidia
+
+    ```sh
+    #install nvidia package (For the Maxwell (NV110/GM XXX ) series and newer)
+    sudo pacman -S nvidia nvidia-utils #nvidia-lts for lts kernal // For kepler series nvidia-470xx-dkms // For fermi nvidia-390xx-dkms
+    sudo nvim /etc/mkinitcpio.conf #remove the kms hook & rebuild the initcpio & reboot (after the nvidia is detected re add it)
+    ```
+
 - Audio driver install
+
     ```sh
     sudo pacman -S pipewire pipewire-alsa pipewire-jack pipewire-pulse gst-plugin-pipewire libpulse wireplumber
     
@@ -36,7 +43,9 @@
     systemctl enable --user pipewire-pulse
     systemctl enable --user wireplumber
     ```
+
 - Install printer driver (purely optional you may not even need if it works automatically)
+
     ```sh
     yay -S epson-inkjet-printer-escpr
     ```
