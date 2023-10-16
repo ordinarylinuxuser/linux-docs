@@ -180,6 +180,10 @@
   ```
 - After reboot login to account 
   ```sh
+  #if it says change directory faild & can't find home dir & logging in with home ="/" then run following command
+  sudo mkhomedir_helper olu (olu is your username)
+  # if there are no default xdg directories like Document Downloads etc run following command
+  xdg-user-dirs-update 
   nmtui #terminal ui to login to network
   ```
 - Install yay for convenience 
