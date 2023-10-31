@@ -256,3 +256,9 @@
   ```sh
   sudo pacman -S pacman-contrib
   ```
+
+- Set RTC Time Clock to local timezone (if you are using dual boot with windows helps to avoid hw clock sync issues)
+  
+  ```sh
+  timedatectl set-local-rtc 1
+  ```
