@@ -35,11 +35,6 @@
     ```
 
   - in org.gnome.mutter -> expermimental features -> scale-monitor-framebuffer
-- If you are into tiling like i am pop-shell is the way to go on gnome (i specially like it enable disable functionality)
-
-    ```sh
-    yay -S gnome-shell-extension-pop-shell-git  
-    ```
 
 ## Some UserFriendly Gnome Extensions & Apps
 
@@ -53,3 +48,4 @@
 - Vitals
 - User Avatar in Quick Settings
 - Show Desktop Button
+- Forge (for tiling)
