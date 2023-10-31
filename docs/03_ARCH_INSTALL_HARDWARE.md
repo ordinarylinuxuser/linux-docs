@@ -20,7 +20,7 @@
     ```
   - For amd
     ```sh
-    sudo pacman -S mesa xf86-video-amdgpu
+    sudo pacman -S mesa xf86-video-amdgpu vulkan-radeon
     ```
   - For vulkan support
 
