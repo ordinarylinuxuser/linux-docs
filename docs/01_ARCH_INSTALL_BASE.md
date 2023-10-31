@@ -144,7 +144,7 @@
 - set root password
 
     ```sh
-    passwd yourpass
+    passwd
     ```
 
 - update the pacmanconfig
