@@ -18,7 +18,10 @@
     sudo pacman -S mesa xf86-video-intel sof-firmware sof-tools #xf86-video-intel for the DDX 2d acceleration in xorg (for the sound sof-firmware (took way too long to figure it out since my laptop didn't detect it))
     sudo pacman -S intel-media-driver libva-utils #for VA- API
     ```
-
+  - For amd
+    ```sh
+    sudo pacman -S mesa xf86-video-amdgpu
+    ```
   - For vulkan support
 
     ```sh
