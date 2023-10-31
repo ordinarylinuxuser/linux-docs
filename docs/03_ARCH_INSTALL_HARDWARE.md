@@ -15,7 +15,7 @@
   - For intel
 
     ```sh
-    sudo pacman -S mesa xf86-video-intel sof-firmware sof-tools #xf86-video-intel for the DDX 2d acceleration in xorg (for the sound sof-firmware (took way too long to figure it out since my laptop didn't detect it))
+    sudo pacman -S mesa xf86-video-intel vulkan-intel sof-firmware sof-tools #xf86-video-intel for the DDX 2d acceleration in xorg (for the sound sof-firmware (took way too long to figure it out since my laptop didn't detect it))
     sudo pacman -S intel-media-driver libva-utils #for VA- API
     ```
   - For amd
@@ -25,7 +25,7 @@
   - For vulkan support
 
     ```sh
-    sudo pacman -S vulkan-intel vulkan-icd-loader vulkan-tools vulkan-mesa-layers #vulkan support
+    sudo pacman -S vulkan-icd-loader vulkan-tools vulkan-mesa-layers #vulkan support
     ```
 
   - For nvidia
