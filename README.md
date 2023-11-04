@@ -1,4 +1,6 @@
-# Arch Linux Guide Index
+# Guides
+
+## Arch Linux Guide Index
 
 - [Arch Linux Install Base](docs/01_ARCH_INSTALL_BASE.md)
 
