@@ -70,7 +70,7 @@
   - create the btrfs sub volumes
 
     ```sh
-    mount /dev/nvme0n1p3 # mount the root to /mnt
+    mount /dev/nvme0n1p3 /mnt # mount the root to /mnt
     btrfs su cr /mnt/@ # root subvol
     btrfs su cr /mnt/@home # home subvol
     btrfs su cr /mnt/@varlog # var log subvol
